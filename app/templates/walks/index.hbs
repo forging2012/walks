@@ -1,12 +1,14 @@
 <ul>
     {{#each}}
         <li>
-            {{#link-to 'walk' this}}
-                {{author}},
-                {{title}}
-            {{/link-to}}
+           <p>Walk: {{title}},</p>
+           <p>Author: {{author}}</p>
+           <p>Location: {{location}}</p>
+           {{#each in points}}
+               <p>pin: {{title}}</p>
+           {{/each}}
         </li>
     {{else}}
-        <li>No contacts found.</li>
+        <li>No walks found.</li>
     {{/each}}
 </ul>

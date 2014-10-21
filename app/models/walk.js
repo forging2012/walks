@@ -1,12 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-    _id: DS.attr('string'),
     author: DS.attr('string'),
-    categories: DS.attr('array'),
+    categories: DS.attr('string'),
     title: DS.attr('string'),
-    locations: DS.attr('array'),
-    pins: DS.attr('array'),
-    created_at: DS.attr('date'),
-    updated_at: DS.attr('date')
+    location: DS.attr('string'),
+    points: DS.attr('string'),
+    created_at: DS.attr('date')
 });
